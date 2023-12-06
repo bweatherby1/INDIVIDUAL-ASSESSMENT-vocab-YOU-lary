@@ -84,4 +84,4 @@ init();
 ## Brad's Vocab-YOU-lary page
 
 ## ERD and Wireframe
-<img src=![Alt text](<2023-12-05 (2).png>)>
+<img ![Alt text](<2023-12-05 (2).png>)>
