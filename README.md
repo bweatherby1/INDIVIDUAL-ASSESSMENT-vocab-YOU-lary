@@ -84,5 +84,6 @@ init();
 ## Brad's Vocab-YOU-lary page
 
 ## ERD and Wireframe
-<link href="https://miro.com/app/board/uXjVNGhm_kk=/">
+https://miro.com/app/board/uXjVNGhm_kk=/
+
 ![Alt text](<2023-12-05 (2).png>)
