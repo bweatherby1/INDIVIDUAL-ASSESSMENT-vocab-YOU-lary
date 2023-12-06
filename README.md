@@ -85,3 +85,5 @@ init();
 
 ## ERD and Wireframe
 <img src="C:\Users\bweat\OneDrive\Pictures\Screenshots\2023-12-05 (2).png">
+
+![Alt text](<Your paragraph text (1).png>)
