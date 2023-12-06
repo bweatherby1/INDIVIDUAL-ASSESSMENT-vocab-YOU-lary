@@ -85,6 +85,7 @@ init();
 
 ## ERD and Wireframe
 <<<<<<< HEAD
+<<<<<<< HEAD
 <img src="C:\Users\bweat\OneDrive\Pictures\Screenshots\2023-12-05 (2).png">
 
 ![Alt text](<Your paragraph text (1).png>)
@@ -93,3 +94,11 @@ https://miro.com/app/board/uXjVNGhm_kk=/
 
 ![Alt text](<2023-12-05 (2).png>)
 >>>>>>> ef171f7bdbe7bfb855a28d54e5af765e4cee82ec
+=======
+
+https://miro.com/app/board/uXjVNGhm_kk=/
+
+![Alt text](<2023-12-05 (2).png>)
+
+![Alt text](<Your paragraph text (1).png>)
+>>>>>>> 9cc951ecb995b282718580072366bd43f8b22b0b
