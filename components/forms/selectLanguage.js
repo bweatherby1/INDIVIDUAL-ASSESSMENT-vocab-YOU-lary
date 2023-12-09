@@ -12,7 +12,7 @@ const selectLanguage = (languageId) => {
           <option 
             value="${language.firebaseKey}" 
             ${languageId === language.firebaseKey ? 'selected' : ''}>
-              ${language.first_name} ${language.last_name}
+              ${language.name}
           </option>`;
     });
 

@@ -6,15 +6,11 @@ import { showLanguages } from '../pages/languages';
 const formEvents = () => {
   document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
-    // TODO: CLICK EVENT FOR SUBMITTING FORM FOR ADDING A BOOK
-    if (e.target.id.includes('submit-Term')) {
+    if (e.target.id.includes('submit-term')) {
       const payload = {
-        title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
-        image: document.querySelector('#image').value,
-        price: document.querySelector('#price').value,
-        author_id: document.querySelector('#author_id').value,
-        sale: document.querySelector('#sale').checked,
+        term: document.querySelector('#term').value,
+        defintion: document.querySelector('#definition').value,
+        language_id: document.querySelector('#language_id').value,
       };
       createTerm(payload).then(({ name }) => {
         const patchPayload = { firebaseKey: name };
@@ -24,16 +20,12 @@ const formEvents = () => {
       });
     }
 
-    // TODO: CLICK EVENT FOR EDITING A BOOK
     if (e.target.id.includes('update-term')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
-        title: document.querySelector('#title').value,
-        description: document.querySelector('#description').value,
-        image: document.querySelector('#image').value,
-        price: document.querySelector('#price').value,
-        author_id: document.querySelector('#author_id').value,
-        sale: document.querySelector('#sale').checked,
+        term: document.querySelector('#term').value,
+        defintion: document.querySelector('#definition').value,
+        language_id: document.querySelector('#language_id').value,
         firebaseKey,
       };
 
@@ -42,12 +34,11 @@ const formEvents = () => {
       });
     }
 
-    // FIXME: ADD CLICK EVENT FOR SUBMITTING FORM FOR ADDING AN AUTHOR
     if (e.target.id.includes('submit-language')) {
       const payload = {
-        first_name: document.querySelector('#first_name').value,
-        last_name: document.querySelector('#last_name').value,
-        email: document.querySelector('#email').value
+        name: document.querySelector('#name').value,
+        origin: document.querySelector('#origin').value,
+        history: document.querySelector('#history').value
       };
 
       createLanguage(payload).then(({ name }) => {
@@ -61,9 +52,9 @@ const formEvents = () => {
     if (e.target.id.includes('update-language')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
-        first_name: document.querySelector('#first_name').value,
-        last_name: document.querySelector('#last_name').value,
-        email: document.querySelector('#email').value,
+        name: document.querySelector('#name').value,
+        origin: document.querySelector('#origin').value,
+        history: document.querySelector('#history').value,
         firebaseKey,
       };
 
@@ -71,7 +62,6 @@ const formEvents = () => {
         getLanguages().then(showLanguages);
       });
     }
-    // FIXME:ADD CLICK EVENT FOR EDITING AN AUTHOR
   });
 };
 

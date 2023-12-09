@@ -8,14 +8,12 @@ import navigationEvents from '../events/navigationEvents';
 import { showTerms } from '../pages/terms';
 
 const startApp = () => {
-  domBuilder(); // BUILD THE DOM
-  domEvents(); // ADD THE EVENT LISTENTERS TO THE DOM
-  formEvents(); // ADD FORM EVENT LISTENTERS TO THE DOM
-  navBar(); // DYNAMICALLY ADD THE NAV
-  logoutButton(); // ADD THE LOGOUT BUTTON COMPONENT
-  navigationEvents(); // ATTACH THE EVENT LISTENERS TO THE NAVBAR
-
-  // TODO: Put all books on the DOM on App load//
+  domBuilder();
+  domEvents();
+  formEvents();
+  navBar();
+  logoutButton();
+  navigationEvents();
   getTerms().then((terms) => showTerms(terms));
 };
 

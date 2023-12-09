@@ -8,11 +8,11 @@ const addTermForm = (obj = {}) => {
     <form id="${obj.firebaseKey ? `update-term--${obj.firebaseKey}` : 'submit-term'}" class="mb-4">
       <div class="form-group">
         <label for="title">Term</label>
-        <input type="text" class="form-control" id="title" aria-describedby="termTitle" placeholder="New Term" value="${obj.title || ''}" required>
+        <input type="text" class="form-control" id="term" aria-describedby="termTitle" placeholder="New Term" value="${obj.term || ''}" required>
       </div>
       <div class="form-group">
-        <label for="description">Definition</label>
-        <textarea class="form-control" placeholder="Term Definition" id="description" style="height: 100px">${obj.description || ''}</textarea>
+        <label for="definition">Definition</label>
+        <textarea class="form-control" placeholder="Term Definition" id="definition" style="height: 100px">${obj.definition || ''}</textarea>
       </div>
       <div class="form-group" id="select-language">
       </div>

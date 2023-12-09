@@ -13,7 +13,6 @@ import viewLanguage from '../pages/viewLanguage';
 
 const domEvents = () => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
-    // TODO: CLICK EVENT FOR DELETING A BOOK
     if (e.target.id.includes('delete-term')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -25,23 +24,19 @@ const domEvents = () => {
       }
     }
 
-    // TODO: CLICK EVENT FOR SHOWING FORM FOR ADDING A BOOK
     if (e.target.id.includes('add-term-btn')) {
       addTermForm();
     }
 
-    // TODO: CLICK EVENT EDITING/UPDATING A BOOK
     if (e.target.id.includes('edit-term-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getSingleTerm(firebaseKey).then((termObj) => addTermForm(termObj));
     }
-    // TODO: CLICK EVENT FOR VIEW BOOK DETAILS
     if (e.target.id.includes('view-term-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
       getTermDetails(firebaseKey).then(viewTerm);
     }
 
-    // FIXME: ADD CLICK EVENT FOR DELETING AN AUTHOR
     if (e.target.id.includes('delete-language-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
