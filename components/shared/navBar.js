@@ -16,22 +16,10 @@ const navBar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="sale-Terms">Terms on Sale</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#" id="languages">Languages</a>
-            </li>
-            <li>
-            <input
-              class="form-control mr-sm-2"
-              id="search"
-              placeholder="Search Term Titles"
-              aria-label="Search"
-            />
             </li>
           </ul>
           <span class="navbar-text">
-            <div id="cart-button"></div>
             <div id="logout-button"></div>
           </span>
         </div>
