@@ -82,8 +82,6 @@ const termsOnSale = () => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// TODO: STRETCH...SEARCH BOOKS
-
 export {
   getTerms,
   createTerm,

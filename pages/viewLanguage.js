@@ -7,8 +7,13 @@ const viewLanguage = (obj) => {
   const domString = `
   <div class=" text-white mt-5 d-flex flex-wrap">
    <div class="d-flex flex-column">
-     <h1 >${obj.first_name} ${obj.last_name}</h1>
-     language Email: <a href="mailto:${obj.email}">${obj.email}</a>
+     <h1 >${obj.name}</h1>
+     <hr>
+     Country of origin:
+     <a>${obj.origin}</a>
+     <hr>
+     History:
+     <a>${obj.history}</a>
      <hr>
      <div class="mt-5">
        <i id="update-language-btn--${obj.firebaseKey}" class="fas fa-edit btn btn-info">Update</i>
